@@ -1,0 +1,77 @@
+{% extends "layouts/main.html" %}
+
+{% set previousPageNumber = (question.number-1)%}
+
+{% block pageTitle %}
+    Check your answers –  Design Maturity Survey
+{% endblock %}
+
+{% block beforeContent %}
+
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+            <span class="govuk-phase-banner__text">
+      This is a beta service. You can <a href="https://forms.gle/DP6XmEkdoSPz7Z5A9" target="_blank">give feedback (opens in new tab)</a> on your experience using it.
+    </span>
+        </p>
+    </div>
+
+    <a href="/optional" class="govuk-back-link">Back</a>
+
+    {% endblock%}
+
+    {% block content %}
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-three-quarters">
+
+                <form action="/check" method="post">
+
+                    <h1 class="govuk-heading-l">Check your answers</h1>
+
+                    <p>Check your answers before submitting.</p>
+
+                    <dl class="govuk-summary-list">
+
+                        {% for question in questions %}
+                            <div class="govuk-summary-list__row">
+                                <dt class="govuk-summary-list__key">{{question.title}}</dt>
+                                <dd class="govuk-summary-list__value">{{data['q'+question.number]}}</dd>
+                                <dd class="govuk-summary-list__actions">
+                                    <a class="govuk-link" href="/question/{{question.number}}">Change<span class="govuk-visually-hidden">
+                                            {{question.title}}</span>
+                                    </a>
+                                </dd>
+                            </div>
+                        {% endfor %}
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Role</dt>
+                            <dd class="govuk-summary-list__value">{{data['role']}}</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="/optional#role">Change<span class="govuk-visually-hidden">optional questions</span>
+                                </a>
+                            </dd>
+                        </div>
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">Business area</dt>
+                            <dd class="govuk-summary-list__value">{{data['area']}}</dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="govuk-link" href="/optional#area">Change<span class="govuk-visually-hidden">optional questions</span>
+                                </a>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <button class="govuk-button" data-module="govuk-button">Submit your responses</button>
+
+                </forn>
+
+            </div>
+
+        </div>
+
+    {% endblock %}

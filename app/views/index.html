@@ -1,0 +1,76 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Overview – {{serviceName}} –  Design Maturity Survey
+{% endblock %}
+
+{% set pageSection = "Overview"%}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+      <span class="govuk-phase-banner__text">
+      This is a beta service. You can <a href="https://forms.gle/DP6XmEkdoSPz7Z5A9" target="_blank">give feedback (opens in new tab)</a> on your experience using it.
+    </span>
+    </p>
+  </div>
+
+  {% endblock%}
+
+  {% block content %}
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <span class="govuk-caption-l">March 2023</span>
+        <h1 class="govuk-heading-l">Design Maturity Survey</h1>
+
+        <p>This survey helps to understand how the design profession is understood and perceived across the Department for Education (DfE).</p>
+
+        <p>For the purpose of this survey, design covers Service Design, Content Design and Interaction Design.</p>
+
+        <p>This survey is completely anonymous and shouldn't take longer than 5 minutes to complete.</p>
+
+        <div class="govuk-inset-text">
+
+          <h2 class="govuk-heading-m">Complete the survey</h2>
+          <p>This survey closes at 11:59pm on 14 March.</p>
+          <a href="/question/1" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+ Start
+  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
+            </svg>
+          </a>
+        </div>
+        
+
+        <h2 class="govuk-heading-m">Who should complete this survey</h2>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Anyone who works in a design role</li>
+          <li>Anyone in a DDaT role including product, research, delivery, technical, or architecture</li>
+          <li>Anyone in a data, analysis, or analytical role</li>
+          <li>Anyone outside of digital roles, but might work with designers, for example, policy or strategy</li>
+        </ul>
+
+        <p>Depending on your role, you may not know the answers for all of the questions When in doubt, pick the option that best matches your perception.</p>
+
+
+        <h2 class="govuk-heading-m">What we do with responses</h2>
+
+        <p>We'll use the information from all responses to understand where to focus our efforts in improving design understanding in DfE.</p>
+
+        <p>We'll publish analysis of the results at the end of March.</p>
+
+        <p>If you have any questions about this survey, contact <a href="mailto:andy.jones@education.gov.uk?subject=Design maturity survey query" target="_blank">Andy Jones</a> (Head of Design).</p>
+
+      </div>
+
+    </div>
+
+  {% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layouts/main.html" %}
+
+{% set previousPageNumber = (question.number-1)%}
+
+{% block pageTitle %}
+    Survey submitted –  Design Maturity Survey
+{% endblock %}
+
+{% block beforeContent %}
+
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+            <span class="govuk-phase-banner__text">
+      This is a beta service. You can <a href="https://forms.gle/DP6XmEkdoSPz7Z5A9" target="_blank">give feedback (opens in new tab)</a> on your experience using it.
+    </span>
+        </p>
+    </div>
+
+    {% endblock%}
+
+    {% block content %}
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-three-quarters">
+
+                <div class="govuk-panel govuk-panel--confirmation">
+                    <h1 class="govuk-panel__title">Survey submitted</h1>
+                    <div class="govuk-panel__body">
+   Thank you for taking the time to complete this survey.
+                    </div>
+                </div>
+
+                <h2 class="govuk-heading-m">Next steps</h2>
+
+                <p>Read <a href="https://design.education.gov.uk/maturity">previous survey results</a>.</p>
+
+            </div>
+
+        </div>
+
+    {% endblock %}

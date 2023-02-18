@@ -1,0 +1,68 @@
+{% extends "layouts/main.html" %}
+
+{% set previousPageNumber = (question.number-1)%}
+
+{% block pageTitle %}
+  {{question.title}} – {{serviceName}} –  Design Maturity Survey
+{% endblock %}
+
+{% set pageSection = "Overview"%}
+
+{% block beforeContent %}
+
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+      <span class="govuk-phase-banner__text">
+      This is a beta service. You can <a href="https://forms.gle/DP6XmEkdoSPz7Z5A9" target="_blank">give feedback (opens in new tab)</a> on your experience using it.
+    </span>
+    </p>
+  </div>
+
+  {% if question.number === 1%}
+
+    <a href="/" class="govuk-back-link">Back</a>
+    {% else%}
+    <a href="/question/{{previousPageNumber}}" class="govuk-back-link">Back</a>
+  {% endif %}
+
+  {% endblock%}
+
+  {% block content %}
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-three-quarters">
+
+        <form action="/question/{{question.number}}" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l">Question {{question.number}} of 13</span>
+                <h1 class="govuk-fieldset__heading">{{question.title}}
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+
+                {% for option in question.options%}
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="q{{question.number}}" name="q{{question.number}}" type="radio" value="{{option.option}}" {{checked("q"+question.number,option.option)}}>
+                  <label class="govuk-label govuk-radios__label" for="q{{question.number}}">{{option.option}}</label>
+                </div>
+                {% endfor %}
+              
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+        </forn>
+
+      </div>
+
+    </div>
+
+  {% endblock %}

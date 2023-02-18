@@ -1,0 +1,328 @@
+[
+    {
+        "number": 1,
+        "title": "Does DfE have any of the following types of design goals?",
+        "options": [
+            {
+                "option": "No goals",
+                "value": 0
+            },
+            {
+                "option": "General design-related goals describing what design should be or achieve",
+                "value": 1
+            },
+            {
+                "option": "Specific, well documented goals",
+                "value": 2
+            },
+            {
+                "option": "Prioritised goals indicating which are the most important",
+                "value": 3
+            },
+            {
+                "option": "A roadmap or plan for how to achieve organisational design goals",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 2,
+        "title": "When are design activities included in planning?",
+        "options": [
+            {
+                "option": "Design is not included in planning schedules",
+                "value": 0
+            },
+            {
+                "option": "This usually happens before a design is implemented",
+                "value": 1
+            },
+            {
+                "option": "This is usually included in planning",
+                "value": 2
+            },
+            {
+                "option": "This is included in planning and prioritised",
+                "value": 3
+            },
+            {
+                "option": "This is always part of early project planning or to at least understand whats required",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 3,
+        "title": "How well is the design profession staffed?",
+        "options": [
+            {
+                "option": "No staff with specialised design skills or experience",
+                "value": 0
+            },
+            {
+                "option": "Some people with design skills or experience but it's not their main job",
+                "value": 1
+            },
+            {
+                "option": "Dedicated people in design roles, but not enough to do all the work that's needed or external contractors hired occasionally",
+                "value": 2
+            },
+            {
+                "option": "Enough specialised people and skills to address current work",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "number": 4,
+        "title": "How well is design funded?",
+        "options": [
+            {
+                "option": "No money is spent on internal design staff, external contractors or other design resources",
+                "value": 0
+            },
+            {
+                "option": "Some design work is funded, but there is no dedicated design budget",
+                "value": 1
+            },
+            {
+                "option": "There is some design budget, but its not enough",
+                "value": 2
+            },
+            {
+                "option": "There is adequate budget, nearly adequate or even more than enough budget",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "number": 5,
+        "title": "Across DfE, what do people think design is?",
+        "options": [
+            {
+                "option": "People don't know or they have a toxic or problematic understanding of design",
+                "value": 0
+            },
+            {
+                "option": "There is an awareness of the concept of design but limited understanding of the benefits",
+                "value": 1
+            },
+            {
+                "option": "Some people have a good understanding, but many others don't",
+                "value": 2
+            },
+            {
+                "option": "There is a consistent definition of design and is understood across DfE",
+                "value": 3
+            },
+            {
+                "option": "The purpose of design is not only consistent across the organisation, but is applied across departments, services and processes",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 6,
+        "title": "How does leadership support design",
+        "options": [
+            {
+                "option": "Leadership does not support design in any way",
+                "value": 0
+            },
+            {
+                "option": "Leaders are aware of design but are indifferent to it or even hostile",
+                "value": 1
+            },
+            {
+                "option": "Leadership accepts the need for design but there are some skeptical leaders who aren't convinced or don't provide enough or the right support",
+                "value": 2
+            },
+            {
+                "option": "There is design support at Deputy Director level upwards",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "number": 7,
+        "title": "How does DfE encourage people to develop their design career?",
+        "options": [
+            {
+                "option": "No formal design roles exist",
+                "value": 0
+            },
+            {
+                "option": "Few or no design role but some people are self-motivated and prioritise design work in their normal roles",
+                "value": 1
+            },
+            {
+                "option": "Job profiles and career paths exist but personal growth and development isn't tracked or understood well",
+                "value": 2
+            },
+            {
+                "option": "Job profiles and career paths for some design roles are well defined and understood throughout DfE",
+                "value": 3
+            },
+            {
+                "option": "Job profiles and career paths exist for all design roles and are supported by Design and Research Operations teams",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 8,
+        "title": "How does DfE plan to continue to improve the design profession in future?",
+        "options": [
+            {
+                "option": "No design work is being done",
+                "value": 0
+            },
+            {
+                "option": "Design work is done haphazardly, there is little to no effort to evaluate or improve how it's done",
+                "value": 1
+            },
+            {
+                "option": "Some teams are working towards improving their own work but not all teams are doing the same",
+                "value": 2
+            },
+            {
+                "option": "Plans are in place to repeat and improve design work across DfE in all teams",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "number": 9,
+        "title": "How and when are design methods used in DfE",
+        "options": [
+            {
+                "option": "No design or research methods are used",
+                "value": 0
+            },
+            {
+                "option": "A few are used but not consistently",
+                "value": 1
+            },
+            {
+                "option": "Design methods are used throughout the delivery lifecycle not just at the end",
+                "value": 2
+            },
+            {
+                "option": "A wide variety of methods are being used well",
+                "value": 3
+            },
+            {
+                "option": "Design methods are being used outside of traditional digital teams, for example, finance teams, strategy, policy, support teams, operational teams",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 10,
+        "title": "How do non-design people perceive design?",
+        "options": [
+            {
+                "option": "No design work is done or it's not talked about",
+                "value": 0
+            },
+            {
+                "option": "Among non-design roles, design is noted but not accepted or supported",
+                "value": 1
+            },
+            {
+                "option": "Some people in non-design roles are curious and want to be involved but most don't support it",
+                "value": 2
+            },
+            {
+                "option": "Most non-design roles accept and support design but it varies across DfE",
+                "value": 3
+            },
+            {
+                "option": "Non-design roles have strong respect for design and work alongside design roles on various activities",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 11,
+        "title": "How is design work kept consistent across teams and projects?",
+        "options": [
+            {
+                "option": "It isn't: The only common thread is not knowing or caring about it",
+                "value": 0
+            },
+            {
+                "option": "Inconsistently: there are many inconsistencies across design within and across projects",
+                "value": 1
+            },
+            {
+                "option": "Consistently: Design process is similar or consistent across teams and projects",
+                "value": 2
+            },
+            {
+                "option": "Most non-design roles accept and support design but it varies across DfE",
+                "value": 3
+            },
+            {
+                "option": "Systematically: There are established, successful frameworks across DfE which are shared, maintained and improved by everyone",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 12,
+        "title": "How does design impact the final outcome?",
+        "options": [
+            {
+                "option": "Not at all, there is no design work being done so there is no impact",
+                "value": 0
+            },
+            {
+                "option": "Weak: Design does not have a strong impact or positive outcome on design quality due to politics, constraints or lack of experience",
+                "value": 1
+            },
+            {
+                "option": "Moderate: Teams are trying to produce high quality work and many are successful",
+                "value": 2
+            },
+            {
+                "option": "Strong: Many or all of the design work produced is of high quality and meets required standards",
+                "value": 3
+            },
+            {
+                "option": "Very strong: Designs are good, they lead in the industry and in design community standards",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "number": 13,
+        "title": "How are quantitative metrics used to measure design quality?",
+        "options": [
+            {
+                "option": "No measurable indicators of design quality are defined",
+                "value": 0
+            },
+            {
+                "option": "At least a few design metrics are collected and discussed",
+                "value": 1
+            },
+            {
+                "option": "Design metrics are collected regularly and tracked over time",
+                "value": 2
+            },
+            {
+                "option": "Design metrics are shared throughout DfE",
+                "value": 3
+            },
+            {
+                "option": "Design metrics are shared with decision makers and policy people",
+                "value": 4
+            },
+            {
+                "option": "Design metrics influence decisions",
+                "value": 5
+            }
+        ]
+    }
+]

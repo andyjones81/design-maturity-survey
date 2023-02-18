@@ -1,0 +1,159 @@
+{% extends "layouts/main.html" %}
+
+{% set previousPageNumber = (question.number-1)%}
+
+{% block pageTitle %}
+    Optional information –  Design Maturity Survey
+{% endblock %}
+
+{% set pageSection = "Overview"%}
+
+{% block beforeContent %}
+
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+            <span class="govuk-phase-banner__text">
+      This is a beta service. You can <a href="https://forms.gle/DP6XmEkdoSPz7Z5A9" target="_blank">give feedback (opens in new tab)</a> on your experience using it.
+    </span>
+        </p>
+    </div>
+
+    <a href="/question/13" class="govuk-back-link">Back</a>
+
+    {% endblock%}
+
+    {% block content %}
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-three-quarters">
+
+                <form action="/optional" method="post">
+
+                    <h1 class="govuk-heading-l">Optional information</h1>
+
+                    <p>The following questions are optional but can help understand maturity by different areas of the organisation.</p>
+
+                    <div class="govuk-form-group" id="role">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend">What is your role?</legend>
+                            <div class="govuk-radios" data-module="govuk-radios">
+
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-1" name="role" type="radio" value="Architecture">
+                                    <label class="govuk-label govuk-radios__label" for="role-1">Architecture</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-2" name="role" type="radio" value="Business analysis">
+                                    <label class="govuk-label govuk-radios__label" for="role-2">Business analysis</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-3" name="role" type="radio" value="Content design">
+                                    <label class="govuk-label govuk-radios__label" for="role-3">Content design</label>
+                                </div>
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-4" name="role" type="radio" value="Data">
+                                    <label class="govuk-label govuk-radios__label" for="role-4">Data</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-5" name="role" type="radio" value="Delivery management">
+                                    <label class="govuk-label govuk-radios__label" for="role-5">Delivery management</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-6" name="role" type="radio" value="User research">
+                                    <label class="govuk-label govuk-radios__label" for="role-6">Deputy Director or above</label>
+                                </div>
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-7" name="role" type="radio" value="Development">
+                                    <label class="govuk-label govuk-radios__label" for="role-7">Development</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-8" name="role" type="radio" value="Interaction design">
+                                    <label class="govuk-label govuk-radios__label" for="role-8">Interaction design</label>
+                                </div>
+                                   <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-9" name="role" type="radio" value="Operations and Infrastructure">
+                                    <label class="govuk-label govuk-radios__label" for="role-9">Operations and Infrastructure</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-10" name="role" type="radio" value="Policy">
+                                    <label class="govuk-label govuk-radios__label" for="role-10">Policy</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-11" name="role" type="radio" value="Product management">
+                                    <label class="govuk-label govuk-radios__label" for="role-11">Product management</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-12" name="role" type="radio" value="Service design">
+                                    <label class="govuk-label govuk-radios__label" for="role-12">Service design</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-13" name="role" type="radio" value="User research">
+                                    <label class="govuk-label govuk-radios__label" for="role-13">User research</label>
+                                </div>
+                                <div class="govuk-radios__divider">or</div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="role-14" name="role" type="radio" value="Other">
+                                    <label class="govuk-label govuk-radios__label" for="role-14">Other</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                     <div class="govuk-form-group" id="area">
+                        <fieldset class="govuk-fieldset">
+                            <legend class="govuk-fieldset__legend">What is your portfolio or business area?</legend>
+                            <div class="govuk-radios" data-module="govuk-radios">
+
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-1" name="area" type="radio" value="Families">
+                                    <label class="govuk-label govuk-radios__label" for="area-1">Families</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-3" name="area" type="radio" value="Funding">
+                                    <label class="govuk-label govuk-radios__label" for="area-3">Funding</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-2" name="area" type="radio" value="Operations and Infrastructure">
+                                    <label class="govuk-label govuk-radios__label" for="area-2">Operations and Infrastructure</label>
+                                </div>
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-4" name="area" type="radio" value="Regions">
+                                    <label class="govuk-label govuk-radios__label" for="area-4">Regions</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-5" name="area" type="radio" value="Schools">
+                                    <label class="govuk-label govuk-radios__label" for="area-5">Schools</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-6" name="area" type="radio" value="Skills">
+                                    <label class="govuk-label govuk-radios__label" for="area-6">Skills</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-13" name="area" type="radio" value="Standards and Testing Agency">
+                                    <label class="govuk-label govuk-radios__label" for="area-13">Standards and Testing Agency</label>
+                                </div>
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-7" name="area" type="radio" value="Strategy">
+                                    <label class="govuk-label govuk-radios__label" for="area-7">Strategy</label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="area-12" name="area" type="radio" value="Teaching Regulation Agency">
+                                    <label class="govuk-label govuk-radios__label" for="area-12">Teaching Regulation Agency</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+                </forn>
+
+            </div>
+
+        </div>
+
+    {% endblock %}
